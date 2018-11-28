@@ -1,0 +1,55 @@
+{
+  "name": "bloomcheck",
+  "description": "Bloom Sharekit test app",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "prabhu velayutham",
+    "email": "prabhu.v@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "^10.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && NODE_ENV= npm run jest",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "jest": "jest"
+  },
+  "dependencies": {
+    "@bloomprotocol/share-kit": "^2.2.0",
+    "@feathersjs/configuration": "^2.0.4",
+    "@feathersjs/errors": "^3.3.4",
+    "@feathersjs/express": "^1.2.7",
+    "@feathersjs/feathers": "^3.2.3",
+    "@feathersjs/socketio": "^3.2.7",
+    "@feathersjs/socketio-client": "^1.1.5",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "domready": "^1.0.8",
+    "helmet": "^3.14.0",
+    "serve-favicon": "^2.5.0",
+    "socket.io-client": "^2.1.1",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "ngrok": "^3.1.0",
+    "eslint": "^5.8.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}

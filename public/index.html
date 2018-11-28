@@ -1,0 +1,103 @@
+<html>
+
+<head>
+  <title>Welcome to Bloomcheck</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+      font-weight: 400;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .center {
+      margin: auto;
+      width: 250px;
+      padding: calc(4vw + 2em) 0;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    main {
+      margin-top: 100px;
+      padding: 20px;
+    }
+
+    img.logo {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 2em;
+      font-weight: 100;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+    }
+
+    footer p {
+      font-weight: 300;
+      font-size: 1.0em;
+    }
+
+    a {
+      color: #31D8A0;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      color: #31D8A0;
+    }
+
+    button {
+      background-color: #4CAF50;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="//unpkg.com/@feathersjs/client@^3.0.0/dist/feathers.js"></script>
+  <script src="bundle.js"></script>
+  <main class="container">
+    <h2 class="center-text">A test app for checking bloom login and callback</h2>
+    <div class="center">
+      <canvas id="QR-Container"></canvas>
+    </div>
+    <div class="center" style="display: none;" id="bloomed">
+      <div id="message"></div>
+      <br />
+      <button value="Login Again" onClick="window.location.reload()">Login Again</button>
+    </div>
+    <footer>
+      <p class="center-text">For more information on Bloom see <a href="https://bloom.co" title="Bloom Page" target="blank">bloom.co</a>.</p>
+    </footer>
+  </main>
+</body>
+
+</html>
