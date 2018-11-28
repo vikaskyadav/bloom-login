@@ -8,6 +8,9 @@ This is a sample project to test [Bloom Sharekit] (https://github.com/hellobloom
 
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
 
+## Deploy to heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Getting Started
 
 Getting up and running is as easy as 1, 2, 3.
