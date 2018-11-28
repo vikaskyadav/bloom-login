@@ -2,7 +2,7 @@
 const sharekit = require("@bloomprotocol/share-kit");
 const io = require('socket.io-client');
 
-const socket = io('http://localhost:3030/');
+const socket = io(window.location.origin);
 
 socket.on('connect', function () { console.log('connected') });
 socket.on('bloom created', function (message) {
