@@ -1,0 +1,7 @@
+{
+    "name": "Bloom Login Sample App",
+    "description": "A barebones Node.js Feather app for testing Bloom Login",
+    "repository": "https://github.com/pvela/bloomcheck",
+    "logo": "https://bloom.co/favicon.png",
+    "keywords": ["bloomid", "node", "express", "feathersjs"]
+  }
