@@ -29,6 +29,12 @@ Getting up and running is as easy as 1, 2, 3.
     ```
     npm start
     ```
+4. Local development will use ngrok to tunnel an external domain to localhost. Use that url to access the page so Bloom callback would work with localhost development. The ngrok url will be printed to console on application start as shown below.
+
+```
+info: Feathers application started on http://localhost:3030
+https://3bd765ed.ngrok.io
+```
 
 ## Frontend
 Run browserify app.js -o bundle.js from bloomcheck/public folder to generate bundle.js.
