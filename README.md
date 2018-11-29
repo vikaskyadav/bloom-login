@@ -4,7 +4,7 @@
 
 ## About
 
-This is a sample project to test [Bloom Sharekit] (https://github.com/hellobloom/share-kit/issues/28)
+This is a sample project to test [Bloom Sharekit](https://github.com/hellobloom/share-kit/issues/28)
 
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
 
@@ -30,6 +30,9 @@ Getting up and running is as easy as 1, 2, 3.
 
 ## Frontend
 Run browserify app.js -o bundle.js from bloomcheck/public folder to generate bundle.js.
+
+## Limitation
+Currently all users using the app will get notified of the logged in event. This can be enhanced to send the event only the matching token client.
 
 ## Scaffolding
 
