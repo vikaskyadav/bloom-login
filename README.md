@@ -9,6 +9,8 @@ This is a sample project to test [Bloom Sharekit](https://github.com/hellobloom/
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
 
 ## Deploy to heroku
+This app can be deployed to heroku using the deploy button below.
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Getting Started
@@ -33,6 +35,7 @@ Run browserify app.js -o bundle.js from bloomcheck/public folder to generate bun
 
 ## Limitation
 Currently all users using the app will get notified of the logged in event. This can be enhanced to send the event only the matching token client.
+
 
 ## Scaffolding
 
