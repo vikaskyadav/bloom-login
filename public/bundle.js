@@ -63467,9 +63467,14 @@ const sharekit = require("@bloomprotocol/share-kit");
 const io = require('socket.io-client');
 
 const socket = io(window.location.origin);
-
-socket.on('connect', function () { console.log('connected') });
-socket.on('bloom created', function (message) {
+const token = btoa(Math.random()).substr(5, 5);
+console.log(token);
+socket.emit('create', 'client', {
+  token: token
+}, (error, message) => {
+  console.log('Client created', message);
+});
+socket.on(`bloom created`, function (message) {
   document.getElementById("QR-Container").style.display = "none";
   document.getElementById("bloomed").style.display = "block";
   document.getElementById("message").innerHTML = message.status ? `User ${message.email} logged in successfully` : 'Login Failed';
@@ -63477,7 +63482,6 @@ socket.on('bloom created', function (message) {
 socket.on('disconnect', function () { console.log('disconnect') });
 
 window.onload = function () {
-  const token = "test";
   const requestData = {
     action: sharekit.Action.attestation,
     token: token,
