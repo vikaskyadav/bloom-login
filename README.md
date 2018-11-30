@@ -4,11 +4,13 @@
 
 ## About
 
-This is a sample project to test [Bloom Sharekit] (https://github.com/hellobloom/share-kit/issues/28)
+This is a sample project to test [Bloom Sharekit](https://github.com/hellobloom/share-kit/issues/28)
 
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
 
 ## Deploy to heroku
+This app can be deployed to heroku using the deploy button below.
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Getting Started
@@ -27,9 +29,19 @@ Getting up and running is as easy as 1, 2, 3.
     ```
     npm start
     ```
+4. Local development will use ngrok to tunnel an external domain to localhost. Use that url to access the page so Bloom callback would work with localhost development. The ngrok url will be printed to console on application start as shown below.
+
+```
+info: Feathers application started on http://localhost:3030
+https://3bd765ed.ngrok.io
+```
 
 ## Frontend
 Run browserify app.js -o bundle.js from bloomcheck/public folder to generate bundle.js.
+
+## Limitation
+Currently all users using the app will get notified of the logged in event. This can be enhanced to send the event only the matching token client.
+
 
 ## Scaffolding
 
