@@ -10,7 +10,7 @@ class Service {
 
   async get (id, params) {
     return {
-      id, text: `A new message with ID: ${id}!`
+      id, text: `Incoming new message with ID: ${id}!`
     };
   }
 
