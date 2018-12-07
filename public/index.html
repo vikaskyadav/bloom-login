@@ -11,7 +11,7 @@
 
     html,
     body {
-      font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+      font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
       font-weight: 400;
       font-size: 16px;
       color: #333;
@@ -19,7 +19,7 @@
 
     .center {
       margin: auto;
-      width: 250px;
+      width: 300px;
       padding: calc(4vw + 2em) 0;
     }
 
@@ -64,11 +64,11 @@
 
     a:hover,
     a:focus {
-      color: #31D8A0;
+      color: #6068f1;
     }
 
     button {
-      background-color: #4CAF50;
+      background-color: #6068f1;
       /* Green */
       border: none;
       color: white;
@@ -78,16 +78,35 @@
       display: inline-block;
       font-size: 16px;
     }
+    
+    .nav li a:hover,.navbar-header:hover{
+      color: #5f66f1;
+    }
   </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Awesome Bloom App</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="https://github.com/hellobloom">Github</a></li>
+            <li><a href="https://bloom.co">Bloom Website</a></li>
+          </ul>
+        </div>
+      </nav>
   <script src="//unpkg.com/@feathersjs/client@^3.0.0/dist/feathers.js"></script>
   <script src="bundle.js"></script>
   <main class="container">
-    <h2 class="center-text">A test app for checking bloom login and callback</h2>
+    <h2 class="center-text">Bloom Test App</h2>
     <div class="center">
-      <canvas id="QR-Container"></canvas>
+      <canvas id="QR-Box"></canvas>
     </div>
     <div class="center" style="display: none;" id="bloomed">
       <div id="message"></div>
@@ -95,7 +114,7 @@
       <button value="Login Again" onClick="window.location.reload()">Login Again</button>
     </div>
     <footer>
-      <p class="center-text">For more information on Bloom see <a href="https://bloom.co" title="Bloom Page" target="blank">bloom.co</a>.</p>
+      <p class="center-text">Made with Love by <a href="https://github.com/vikaskyadav" target="_blank">Superman</a> . For more information on Bloom check out <a href="https://bloom.co" title="Bloom Page" target="blank">bloom.co</a>.</p>
     </footer>
   </main>
 </body>
