@@ -34,13 +34,17 @@ Getting up and running is as easy as 1, 2, 3.
 ```
 info: Feathers application started on http://localhost:3030
 https://3bd765ed.ngrok.io
+
+
+
 ```
 
 ## Frontend
 Run browserify app.js -o bundle.js from bloomcheck/public folder to generate bundle.js.
 
-## Limitation
-Currently all users using the app will get notified of the logged in event. This can be enhanced to send the event only the matching token client.
+## Screenshots
+
+
 
 ## License
 
