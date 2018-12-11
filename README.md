@@ -44,6 +44,10 @@ Run browserify app.js -o bundle.js from bloomcheck/public folder to generate bun
 
 ## Screenshots
 
+<img src="https://github.com/vikaskyadav/bloom-login/blob/master/screenshots/bloom_demo.png"/>
+
+<img src="https://github.com/vikaskyadav/bloom-login/blob/master/screenshots/QRcode_scanner_result.png"/>
+
 
 
 ## License
